@@ -3,21 +3,25 @@ import React from "react";
 import { colorGradient1 } from "../utils/styles";
 
 const IndexPage = () => {
-  const imageWidth = "clamp(6rem,calc(5rem + 10vw), 15rem)";
-
+  const spacing = ["4", "8"];
+  const boxShadow = ["6px 6px blue", "10px 10px blue"];
+  const boxShadowHover = ["10px 10px blue", "15px 15px blue"];
   return (
     <Box minHeight="100vh" bg={`${colorGradient1}`}>
       <Box
         style={{
-          backdropFilter: "blur(15px) saturate(10.8) brightness(1)  ",
+          backdropFilter: "blur(15px) saturate(10.8) brightness(1)",
         }}
         // bg={`${dots}`}
-        p="8"
+        p={spacing}
       >
         <Heading
           as="h1"
           fontSize="5rem"
-          mb="4"
+          mb={["-1px", "4"]}
+          ml="-4px"
+          mt="-4px"
+          lineHeight="1"
           // textShadow="5px 5px blue"
           // transition="200ms ease-in-out"
           // _hover={{ textShadow: "15px 15px blue" }}
@@ -27,23 +31,23 @@ const IndexPage = () => {
         <Flex flexWrap={["wrap", "wrap", "nowrap"]}>
           <Image
             src="/images/avatar.jpg"
-            boxSize={[imageWidth]}
-            mb="8"
-            mr="8"
+            boxSize={["clamp(6rem,calc(5rem + 10vw), 15rem)"]}
+            mb={spacing}
+            mr={spacing}
             objectFit="cover"
-            boxShadow="10px 10px blue"
+            boxShadow={boxShadow}
             transition="box-shadow 200ms ease-in-out"
-            _hover={{ boxShadow: "15px 15px blue" }}
+            _hover={{ boxShadow: boxShadowHover }}
             border="5px solid black"
           />
           <Box
-            p="8"
+            p={spacing}
             bg="white"
             // bg="rgba(240,240,240,0.8)"
             style={{ backdropFilter: "blur(10px)" }}
-            boxShadow="10px 10px blue"
+            boxShadow={boxShadow}
             transition="200ms ease-in-out"
-            _hover={{ boxShadow: "15px 15px blue" }}
+            _hover={{ boxShadow: boxShadowHover }}
             width="auto"
             border="5px solid black"
           >
