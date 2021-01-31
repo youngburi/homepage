@@ -25,5 +25,5 @@ radial-gradient(circle at 50% 95%, rgba(0, 0, 0, 1) 1.5%, transparent 1.6%),
 radial-gradient(circle at 65% 10%, rgba(0, 0, 0, 1) 3%, transparent 3.1%),
 radial-gradient(circle at 95% 5%, rgba(0, 0, 0, 1) 1%, transparent 1.1%),
 radial-gradient(circle at 102% 40%, rgba(0, 0, 0, 1) 6%, transparent 6.1%),
-radial-gradient(circle at 5% 30%, rgba(0, 0, 0, 1) 3%, transparent 3.1%)
+radial-gradient(circle at 8% 45%, rgba(0, 0, 0, 1) 3%, transparent 3.1%)
 `;
