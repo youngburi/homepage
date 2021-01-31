@@ -8,24 +8,35 @@ const IndexPage = () => {
   return (
     <Box minHeight="100vh" bg={`${colorGradient1}`}>
       <Box style={{ backdropFilter: "blur(15px)" }} bg={`${dots}`} p="8">
-        <Heading as="h1" fontSize="5rem" mb="4">
+        <Heading
+          as="h1"
+          fontSize="5rem"
+          mb="4"
+          textShadow="10px 10px blue"
+          transition="200ms ease-in-out"
+          _hover={{ textShadow: "15px 15px blue" }}
+        >
           Buri
         </Heading>
         <Flex flexWrap={["wrap", "nowrap"]}>
           <Image
             src="/images/avatar.jpg"
             boxSize={[imageWidth]}
-            boxShadow="md"
             mb="8"
             mr={["0", "8"]}
             objectFit="cover"
+            boxShadow="10px 10px blue"
+            transition="200ms ease-in-out"
+            _hover={{ boxShadow: "15px 15px blue" }}
           />
           <Box
             p="8"
             bg="custom.lightbg"
             // bg="rgba(100,100,100,0.3)"
             // style={{ backdropFilter: "blur(10px)" }}
-            boxShadow="md"
+            boxShadow="10px 10px blue"
+            transition="200ms ease-in-out"
+            _hover={{ boxShadow: "15px 15px blue" }}
             width="auto"
           >
             <Text>
