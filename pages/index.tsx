@@ -1,45 +1,53 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { colorGradient1, dots } from "../utils/styles";
+import { colorGradient1 } from "../utils/styles";
 
 const IndexPage = () => {
   const imageWidth = "clamp(6rem,calc(5rem + 10vw), 15rem)";
 
   return (
     <Box minHeight="100vh" bg={`${colorGradient1}`}>
-      <Box style={{ backdropFilter: "blur(15px)" }} bg={`${dots}`} p="8">
+      <Box
+        style={{
+          backdropFilter: "blur(15px) saturate(10.8) brightness(1)  ",
+        }}
+        // bg={`${dots}`}
+        p="8"
+      >
         <Heading
           as="h1"
           fontSize="5rem"
           mb="4"
-          textShadow="10px 10px blue"
-          transition="200ms ease-in-out"
-          _hover={{ textShadow: "15px 15px blue" }}
+          // textShadow="5px 5px blue"
+          // transition="200ms ease-in-out"
+          // _hover={{ textShadow: "15px 15px blue" }}
         >
           Buri
         </Heading>
-        <Flex flexWrap={["wrap", "nowrap"]}>
+        <Flex flexWrap={["wrap", "wrap", "nowrap"]}>
           <Image
             src="/images/avatar.jpg"
             boxSize={[imageWidth]}
             mb="8"
-            mr={["0", "8"]}
+            mr="8"
             objectFit="cover"
             boxShadow="10px 10px blue"
-            transition="200ms ease-in-out"
+            transition="box-shadow 200ms ease-in-out"
             _hover={{ boxShadow: "15px 15px blue" }}
+            border="5px solid black"
           />
           <Box
             p="8"
-            bg="custom.lightbg"
-            // bg="rgba(100,100,100,0.3)"
-            // style={{ backdropFilter: "blur(10px)" }}
+            bg="white"
+            // bg="rgba(240,240,240,0.8)"
+            style={{ backdropFilter: "blur(10px)" }}
             boxShadow="10px 10px blue"
             transition="200ms ease-in-out"
             _hover={{ boxShadow: "15px 15px blue" }}
             width="auto"
+            border="5px solid black"
           >
-            <Text>
+            <Text textAlign="justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
               tenetur, ipsam vitae consequatur ipsum modi voluptates magni nam
               ullam earum error fugiat quidem mollitia. Exercitationem,
