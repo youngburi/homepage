@@ -22,7 +22,7 @@ const IndexPage = () => {
     }
     
     20% {
-      backdrop-filter: blur(15px) saturate(12) brightness(0.8) hue-rotate(30deg);
+      backdrop-filter: blur(15px) saturate(12) brightness(0.9) hue-rotate(30deg);
       background-position:87% 100%;
     }
 

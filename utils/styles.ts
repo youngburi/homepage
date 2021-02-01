@@ -12,7 +12,7 @@ export const animatedColorGradient1 = (
 ) => `
 radial-gradient(circle at 90% ${position1}%, rgba(0, 50, 80, 0.3), transparent 28%),
 radial-gradient(circle at -${position1}% 80%, rgba(255, 255, 250, 0.5), transparent 28%),
-radial-gradient(circle at 80% ${position3}%, rgba(240, 180, 227, 0.5), transparent 20%),
+radial-gradient(circle at 80% ${position3}%, rgba(240, 180, 227, 0.5), transparent ${radius}%),
 radial-gradient(ellipse at -${position1}% ${position1}%, rgba(255, 105, 227, 0.4), transparent 25%),
 radial-gradient(circle at 40% -${position1}%, rgba(216, 235, 52, 0.4), transparent ${radius}%),
 radial-gradient(circle at 25% 120%, rgba(216, 235, 52, 0.2), transparent ${radius}%),
