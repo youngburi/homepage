@@ -8,14 +8,12 @@ import {
 } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import React, { useState } from "react";
-import { Square } from "../components/squares/square";
+import { Square } from "../components/squares/Square";
 import { SquareGrid } from "../components/squares/SquareGrid";
 import { animatedColorGradient1 } from "../utils/styles";
 
 const IndexPage = () => {
   const spacing = ["4", "8"];
-  const boxShadow = ["8px 8px black"];
-  const boxShadowHover = ["16px 16px blue"];
 
   const animation = keyframes`
     0% {
