@@ -36,16 +36,16 @@ const IndexPage = () => {
   const [direction, setDirection] = useState(true);
 
   useInterval(() => {
-    if (gradientRadius === 30) {
+    if (gradientRadius <= 30) {
       setDirection(true);
     }
-    if (gradientRadius === 60) {
+    if (gradientRadius >= 60) {
       setDirection(false);
     }
     setGradientPos1(direction ? gradientPos1 + 0.1 : gradientPos1 - 0.1);
-    setGradientPos2(direction ? gradientPos2 - 0.1 : gradientPos2 + 0.1);
+    setGradientPos2(direction ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
     setGradientRadius(direction ? gradientRadius + 0.2 : gradientRadius - 0.2);
-  }, 100);
+  }, 150);
 
   return (
     <Box
@@ -76,13 +76,19 @@ const IndexPage = () => {
           <Flex flexWrap={["wrap", "wrap", "nowrap"]}>
             <Image
               src="/images/avatar.jpg"
-              boxSize={["100%", "clamp(6rem,calc(5rem + 10vw), 15rem)"]}
+              boxSize={["clamp(10rem,calc(5rem + 10vw), 15rem)"]}
               mb={spacing}
               mr={spacing}
               objectFit="cover"
               boxShadow={boxShadow}
-              transition="box-shadow 200ms ease-in-out"
-              _hover={{ boxShadow: boxShadowHover }}
+              transition="box-shadow 200ms ease-in-out, transform 200ms ease-in-out"
+              _hover={{
+                boxShadow: boxShadowHover,
+                transform: [
+                  "translate(-2px, -2px)",
+                  "translate(-2.5px, -2.5px)",
+                ],
+              }}
               border="5px solid black"
             />
             {/* <Box
