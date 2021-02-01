@@ -1,7 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-export const Square = ({ initialPosition }: { initialPosition: number[] }) => {
+export const Square = ({
+  initialPosition,
+  color,
+}: {
+  initialPosition: number[];
+  color: string;
+}) => {
   const [position, setPosition] = useState(initialPosition);
 
   const rise = () => {
@@ -14,9 +20,9 @@ export const Square = ({ initialPosition }: { initialPosition: number[] }) => {
       position="relative"
       left={`-${position[0]}rem`}
       top={`-${position[1]}rem`}
-      height="6rem"
-      width="6rem"
-      bg="blue"
+      height="5rem"
+      width="5rem"
+      bg={color}
       transition="200ms ease-in-out"
       boxShadow={`${position[0] * 2}rem ${position[1] * 2}rem black`}
     ></Box>
