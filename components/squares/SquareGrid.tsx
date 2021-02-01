@@ -5,7 +5,7 @@ export const SquareGrid = ({ children }: { children: ReactNode }) => {
   return (
     <Box
       display="grid"
-      gridGap="1rem"
+      gridGap="0.8rem"
       gridTemplateColumns="1fr 1fr 1fr"
       gridTemplateRows="1fr 1fr 1fr"
     >
