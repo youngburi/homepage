@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import React, { useState } from "react";
-import { Square } from "../components/squares/Square";
+import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
 import { animatedColorGradient1 } from "../utils/styles";
 
