@@ -116,6 +116,7 @@ const IndexPage = () => {
                 ],
               }}
               border="5px solid black"
+              mb="2rem"
             />
             {/* <Box
               p={spacing}

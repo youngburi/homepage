@@ -17,7 +17,7 @@ export const Square = ({ initialPosition }: { initialPosition: number[] }) => {
       height="6rem"
       width="6rem"
       bg="blue"
-      transition="200ms ease-out"
+      transition="200ms ease-in-out"
       boxShadow={`${position[0] * 2}rem ${position[1] * 2}rem black`}
     ></Box>
   );
