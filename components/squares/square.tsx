@@ -24,7 +24,8 @@ export const Square = ({
       width="4rem"
       bg={color}
       transition="200ms ease-in-out"
-      boxShadow={`${position[0] * 2}rem ${position[1] * 2}rem black`}
+      boxShadow={`${position[0] * 1.8}rem ${position[1] * 1.2}rem black`}
+      border="5px solid black"
     ></Box>
   );
 };
