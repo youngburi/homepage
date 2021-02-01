@@ -8,11 +8,12 @@ import {
 } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import React, { useState } from "react";
+import { Square } from "../components/squares/square";
 import { animatedColorGradient1 } from "../utils/styles";
 
 const IndexPage = () => {
   const spacing = ["4", "8"];
-  const boxShadow = ["8px 8px blue"];
+  const boxShadow = ["8px 8px black"];
   const boxShadowHover = ["16px 16px blue"];
 
   const animation = keyframes`
@@ -94,7 +95,9 @@ const IndexPage = () => {
             Buri
           </Heading>
           <Flex
-            flexWrap={["wrap", "wrap", "nowrap"]}
+            // flexWrap={["wrap", "wrap", "nowrap"]}
+            flexDirection="column"
+            alignItems="center"
             justifyContent={["center", "center"]}
           >
             <Image
@@ -190,6 +193,7 @@ const IndexPage = () => {
                 et culpa. Quidem minus iusto deserunt facilis reprehenderit?
               </Text>
             </Box> */}
+            <Square initialPosition={[0, 0]} />
           </Flex>
         </Box>
       </Box>
