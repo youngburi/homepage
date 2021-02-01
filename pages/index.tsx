@@ -12,17 +12,27 @@ import { animatedColorGradient1 } from "../utils/styles";
 
 const IndexPage = () => {
   const spacing = ["4", "8"];
-  const boxShadow = ["6px 6px blue", "10px 10px blue"];
-  const boxShadowHover = ["10px 10px blue", "15px 15px blue"];
+  const boxShadow = ["8px 8px blue"];
+  const boxShadowHover = ["16px 16px blue"];
 
   const animation = keyframes`
     0% {
       backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(0deg);
-      background-position:0% 0%;
+      background-position:0% 0%
     }
     
-    50% {
-      backdrop-filter: blur(15px) saturate(8) brightness(2.2) hue-rotate(170deg);
+    20% {
+      backdrop-filter: blur(15px) saturate(12) brightness(0.8) hue-rotate(30deg);
+      background-position:87% 100%;
+    }
+
+    45% {
+      backdrop-filter: blur(15px) saturate(8) brightness(1.5) hue-rotate(170deg);
+      background-position:87% 100%
+    }
+
+    66% {
+      backdrop-filter: blur(15px) saturate(6) brightness(1) hue-rotate(50deg);
       background-position:87% 100%
     }
     
@@ -32,18 +42,27 @@ const IndexPage = () => {
 
   const [gradientPos1, setGradientPos1] = useState(20.0);
   const [gradientPos2, setGradientPos2] = useState(50.0);
+  const [gradientPos3, setGradientPos3] = useState(110.0);
   const [gradientRadius, setGradientRadius] = useState(30.0);
   const [direction, setDirection] = useState(true);
+  const [direction2, setDirection2] = useState(true);
 
   useInterval(() => {
-    if (gradientRadius <= 30) {
+    if (gradientRadius <= 20 && direction === false) {
       setDirection(true);
     }
-    if (gradientRadius >= 60) {
+    if (gradientRadius >= 70 && direction === true) {
       setDirection(false);
     }
+    if (gradientPos3 <= 20 && direction2 === false) {
+      setDirection2(true);
+    }
+    if (gradientPos3 >= 110 && direction2 === true) {
+      setDirection2(false);
+    }
     setGradientPos1(direction ? gradientPos1 + 0.1 : gradientPos1 - 0.1);
-    setGradientPos2(direction ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
+    setGradientPos2(direction2 ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
+    setGradientPos3(direction2 ? gradientPos3 + 0.3 : gradientPos3 - 0.3);
     setGradientRadius(direction ? gradientRadius + 0.2 : gradientRadius - 0.2);
   }, 150);
 
@@ -53,40 +72,44 @@ const IndexPage = () => {
       bg={`${animatedColorGradient1(
         gradientPos1,
         gradientPos2,
+        gradientPos3,
         gradientRadius
       )}`}
     >
       <Box
         css={css`
-          animation: ${animation} 15s Infinite;
+          animation: ${animation} 20s Infinite;
           min-height: 100vh;
         `}
       >
         <Box p={spacing}>
           <Heading
+            fontFamily="raleway"
             as="h1"
             fontSize="5rem"
-            mb={["-1px", "4"]}
-            ml="-4px"
-            mt="-4px"
+            my={["6", "8"]}
             lineHeight="1"
+            textAlign={["center", "center"]}
           >
             Buri
           </Heading>
-          <Flex flexWrap={["wrap", "wrap", "nowrap"]}>
+          <Flex
+            flexWrap={["wrap", "wrap", "nowrap"]}
+            justifyContent={["center", "center"]}
+          >
             <Image
               src="/images/avatar.jpg"
               boxSize={["clamp(10rem,calc(5rem + 10vw), 15rem)"]}
-              mb={spacing}
-              mr={spacing}
+              // mb={spacing}
+              // mr={spacing}
               objectFit="cover"
               boxShadow={boxShadow}
               transition="box-shadow 200ms ease-in-out, transform 200ms ease-in-out"
               _hover={{
                 boxShadow: boxShadowHover,
                 transform: [
-                  "translate(-2px, -2px)",
-                  "translate(-2.5px, -2.5px)",
+                  // "translate(-2px, -2px)",
+                  "translate(-4px, -4px)",
                 ],
               }}
               border="5px solid black"
