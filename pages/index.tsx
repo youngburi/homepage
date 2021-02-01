@@ -101,24 +101,32 @@ const IndexPage = () => {
             alignItems="center"
             justifyContent={["center", "center"]}
           >
-            <Image
-              src="/images/avatar.jpg"
-              boxSize={["clamp(10rem,calc(5rem + 10vw), 15rem)"]}
-              // mb={spacing}
-              // mr={spacing}
-              objectFit="cover"
-              boxShadow={boxShadow}
-              transition="box-shadow 200ms ease-in-out, transform 200ms ease-in-out"
-              _hover={{
-                boxShadow: boxShadowHover,
-                transform: [
-                  // "translate(-2px, -2px)",
-                  "translate(-4px, -4px)",
-                ],
-              }}
-              border="5px solid black"
-              mb="3rem"
-            />
+            <Box mb="3rem">
+              <Square
+                initialPosition={[0, 0]}
+                color="midnightblue"
+                size="clamp(10rem,calc(5rem + 10vw), 15rem)"
+              >
+                <Image
+                  src="/images/avatar.jpg"
+                  boxSize={"100%"}
+                  // mb={spacing}
+                  // mr={spacing}
+                  objectFit="cover"
+                  // boxShadow={boxShadow}
+                  // transition="box-shadow 200ms ease-in-out, transform 200ms ease-in-out"
+                  // _hover={{
+                  //   boxShadow: boxShadowHover,
+                  //   transform: [
+                  //     // "translate(-2px, -2px)",
+                  //     "translate(-4px, -4px)",
+                  //   ],
+                  // }}
+                  // border="5px solid black"
+                  // mb="3rem"
+                />
+              </Square>
+            </Box>
             {/* <Box
               p={spacing}
               bg="white"
