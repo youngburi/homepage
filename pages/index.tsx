@@ -108,12 +108,13 @@ const IndexPage = () => {
           height="100%"
         >
           <Heading
-            fontFamily="raleway"
+            color="white"
             as="h1"
             fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 12rem)"]}
             height={["10vh", "10vh", "clamp(1rem, 20vw, 12rem)"]}
             // lineHeight="1"
             textAlign={["center", "center", "left"]}
+            mb={["0.5rem", "0.5rem", "0"]}
           >
             Buri
           </Heading>

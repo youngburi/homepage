@@ -35,8 +35,10 @@ export const Square = ({
       width={size || "100%"}
       bg={color}
       transition="box-shadow 300ms ease-in-out, left 300ms ease-in-out, top 300ms ease-in-out"
-      boxShadow={`${position[0] * 1.8}rem ${position[1] * 1.2}rem black`}
-      border="5px solid black"
+      boxShadow={`${position[0] * 1.8}rem ${
+        position[1] * 1.2
+      }rem rgba(0,0,0,1)`}
+      // border="5px solid white"
     >
       {children}
     </Box>

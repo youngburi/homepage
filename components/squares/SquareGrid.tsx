@@ -11,7 +11,7 @@ export const SquareGrid = ({
   return (
     <Box
       display="grid"
-      gridGap="1vw"
+      gridGap="10px"
       gridTemplateColumns="1fr 1fr 1fr"
       gridTemplateRows="1fr 1fr 1fr"
       width={size}
