@@ -6,7 +6,6 @@ import {
   keyframes,
   useInterval,
 } from "@chakra-ui/react";
-import { css } from "@emotion/react";
 import React, { useState } from "react";
 import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
@@ -68,7 +67,6 @@ const IndexPage = () => {
 
   return (
     <Box
-      minHeight="100vh"
       bg={`${animatedColorGradient1(
         gradientPos1,
         gradientPos2,
@@ -76,83 +74,53 @@ const IndexPage = () => {
         gradientRadius
       )}`}
     >
-      <Box
-        css={css`
-          animation: ${animation} 20s Infinite;
-          min-height: 100vh;
-        `}
-      >
-        <Box p={spacing}>
+      <Box animation={`${animation} 20s Infinite`} minHeight="100vh">
+        <Flex
+          p={spacing}
+          flexDirection={["column", "column", "row"]}
+          alignItems="center"
+          // justifyContent={["space-between"]}
+          width="100%"
+          height="100%"
+        >
           <Heading
             fontFamily="raleway"
             as="h1"
-            fontSize="5rem"
-            my={["6", "6"]}
-            lineHeight="1"
-            textAlign={["center", "center"]}
+            fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 12rem)"]}
+            height={["10vh", "10vh", "clamp(1rem, 20vw, 12rem)"]}
+            // lineHeight="1"
+            textAlign={["center", "center", "left"]}
           >
             Buri
           </Heading>
-          <Flex
-            // flexWrap={["wrap", "wrap", "nowrap"]}
-            flexDirection="column"
-            alignItems="center"
-            justifyContent={["center", "center"]}
+          <Box
+            my={["5vh", "5vh", "0"]}
+            mx={["0", "0", "clamp(0.5rem, 5vw, 3rem)"]}
           >
-            <Box mb="3rem">
-              <Square
-                initialPosition={[0, 0]}
-                color="midnightblue"
-                size="clamp(10rem,calc(5rem + 10vw), 15rem)"
-              >
-                <Image
-                  src="/images/avatar.jpg"
-                  boxSize={"100%"}
-                  // mb={spacing}
-                  // mr={spacing}
-                  objectFit="cover"
-                  // boxShadow={boxShadow}
-                  // transition="box-shadow 200ms ease-in-out, transform 200ms ease-in-out"
-                  // _hover={{
-                  //   boxShadow: boxShadowHover,
-                  //   transform: [
-                  //     // "translate(-2px, -2px)",
-                  //     "translate(-4px, -4px)",
-                  //   ],
-                  // }}
-                  // border="5px solid black"
-                  // mb="3rem"
-                />
-              </Square>
-            </Box>
-            {/* <Box
-              p={spacing}
-              bg="white"
-              // bg="rgba(240,240,240,0.8)"
-              style={{ backdropFilter: "blur(10px)" }}
-              boxShadow={boxShadow}
-              transition="200ms ease-in-out"
-              _hover={{ boxShadow: boxShadowHover }}
-              width="auto"
-              border="5px solid black"
+            <Square
+              initialPosition={[0, 0]}
+              color="midnightblue"
+              size={["30vh", "30vh", "clamp(1rem, 20vw, 12rem)"]}
             >
-              <Text textAlign="justify">
-                lorem500
-              </Text>
-            </Box> */}
-            <SquareGrid>
-              <Square initialPosition={[0, 0]} color="midnightblue" />
-              <Square initialPosition={[0, 0]} color="green" />
-              <Square initialPosition={[0, 0]} color="yellow" />
-              <Square initialPosition={[0, 0]} color="darkred" />
-              <Square initialPosition={[0, 0]} color="deeppink" />
-              <Square initialPosition={[0, 0]} color="blue" />
-              <Square initialPosition={[0, 0]} color="white" />
-              <Square initialPosition={[0, 0]} color="tomato" />
-              <Square initialPosition={[0, 0]} color="blueviolet" />
-            </SquareGrid>
-          </Flex>
-        </Box>
+              <Image
+                src="/images/avatar.jpg"
+                boxSize={"100%"}
+                objectFit="cover"
+              />
+            </Square>
+          </Box>
+          <SquareGrid size={["30vh", "30vh", "clamp(1rem, 20vw, 12rem)"]}>
+            <Square initialPosition={[0, 0]} color="midnightblue" />
+            <Square initialPosition={[0, 0]} color="green" />
+            <Square initialPosition={[0, 0]} color="yellow" />
+            <Square initialPosition={[0, 0]} color="darkred" />
+            <Square initialPosition={[0, 0]} color="deeppink" />
+            <Square initialPosition={[0, 0]} color="blue" />
+            <Square initialPosition={[0, 0]} color="white" />
+            <Square initialPosition={[0, 0]} color="tomato" />
+            <Square initialPosition={[0, 0]} color="blueviolet" />
+          </SquareGrid>
+        </Flex>
       </Box>
     </Box>
   );

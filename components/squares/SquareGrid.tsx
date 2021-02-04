@@ -1,13 +1,21 @@
 import { Box } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 
-export const SquareGrid = ({ children }: { children: ReactNode }) => {
+export const SquareGrid = ({
+  children,
+  size,
+}: {
+  children: ReactNode;
+  size: string[];
+}) => {
   return (
     <Box
       display="grid"
-      gridGap="0.8rem"
+      gridGap="1vw"
       gridTemplateColumns="1fr 1fr 1fr"
       gridTemplateRows="1fr 1fr 1fr"
+      width={size}
+      height={size}
     >
       {children}
     </Box>
