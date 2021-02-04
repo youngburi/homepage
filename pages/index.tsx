@@ -13,24 +13,37 @@ const IndexPage = () => {
       background-position:0% 0%
     }
     
-    20% {
-      backdrop-filter: blur(15px) saturate(12) brightness(0.9) hue-rotate(30deg);
+    10% {
+      backdrop-filter: blur(15px) saturate(10) brightness(1.1) hue-rotate(30deg);
       background-position:87% 100%;
     }
 
-    45% {
+    22.5% {
       backdrop-filter: blur(15px) saturate(8) brightness(1.5) hue-rotate(170deg);
       background-position:87% 100%
     }
 
-    66% {
+    33% {
       backdrop-filter: blur(15px) saturate(6) brightness(1) hue-rotate(50deg);
       background-position:87% 100%
     }
     
+    50% {
+      backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(360deg);
+    }
+
+    66% {
+      backdrop-filter: blur(15px) saturate(10) brightness(1.2) hue-rotate(345deg);
+    }
+
+    90% {
+      backdrop-filter: blur(15px) saturate(8) brightness(0.9) hue-rotate(330deg);
+    }
+    
     100% {
       backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(360deg);
-    }`;
+    }
+    `;
 
   // const [gradientPos1, setGradientPos1] = useState(20.0);
   // const [gradientPos2, setGradientPos2] = useState(50.0);
@@ -68,7 +81,7 @@ const IndexPage = () => {
       // )}`}
       bg={withoutMoving}
     >
-      <Box animation={`${animation} 20s Infinite`} minHeight="100vh">
+      <Box animation={`${animation} 40s Infinite`} minHeight="100vh">
         <Flex
           p={spacing}
           flexDirection={["column", "column", "row"]}
