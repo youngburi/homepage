@@ -10,14 +10,16 @@ export const animatedColorGradient1 = (
   position3: number,
   radius: number
 ) => `
+linear-gradient(${radius}deg, transparent 70%, rgba(230, 150, 200, 0.3)), 
 radial-gradient(circle at -${position1}% 80%, rgba(255, 255, 250, 0.5), transparent 38%),
-radial-gradient(circle at 80% ${position3}%, rgba(240, 180, 227, 0.5), transparent ${radius}%),
-linear-gradient(${radius}deg, transparent 80%, rgba(230, 150, 200, 0.3)), 
-radial-gradient(ellipse at -${position1}% ${position1}%, rgba(255, 105, 227, 0.4), transparent 25%),
-radial-gradient(circle at 90% ${position1}%, rgba(80, 100, 100, 0.3), transparent ${Math.max(
+radial-gradient(ellipse at -${position1}% ${position1}%, rgba(255, 105, 227, 0.4), transparent ${
+  radius / 3
+}%),
+radial-gradient(circle at 90% ${position1}%, rgba(80, 100, 100, 0.4), transparent ${Math.max(
   50,
   radius
 )}%),
+  radial-gradient(circle at 80% ${position3}%, rgba(240, 180, 227, 0.6), transparent ${radius}%),
 radial-gradient(circle at 40% -${position1}%, rgba(216, 235, 52, 0.4), transparent ${radius}%),
 radial-gradient(circle at 25% 120%, rgba(216, 235, 52, 0.2), transparent ${radius}%),
 radial-gradient(circle at 60% 70%, rgba(230, 230, 230, 0.2), transparent ${radius}%),
