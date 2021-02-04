@@ -1,15 +1,8 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  keyframes,
-  useInterval,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Flex, Heading, Image, keyframes } from "@chakra-ui/react";
+import React from "react";
 import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
-import { animatedColorGradient1 } from "../utils/styles";
+import { withoutMoving } from "../utils/styles";
 
 const IndexPage = () => {
   const spacing = ["4", "8"];
@@ -39,40 +32,41 @@ const IndexPage = () => {
       backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(360deg);
     }`;
 
-  const [gradientPos1, setGradientPos1] = useState(20.0);
-  const [gradientPos2, setGradientPos2] = useState(50.0);
-  const [gradientPos3, setGradientPos3] = useState(110.0);
-  const [gradientRadius, setGradientRadius] = useState(30.0);
-  const [direction, setDirection] = useState(true);
-  const [direction2, setDirection2] = useState(true);
+  // const [gradientPos1, setGradientPos1] = useState(20.0);
+  // const [gradientPos2, setGradientPos2] = useState(50.0);
+  // const [gradientPos3, setGradientPos3] = useState(110.0);
+  // const [gradientRadius, setGradientRadius] = useState(30.0);
+  // const [direction, setDirection] = useState(true);
+  // const [direction2, setDirection2] = useState(true);
 
-  useInterval(() => {
-    if (gradientRadius <= 20 && direction === false) {
-      setDirection(true);
-    }
-    if (gradientRadius >= 70 && direction === true) {
-      setDirection(false);
-    }
-    if (gradientPos3 <= 20 && direction2 === false) {
-      setDirection2(true);
-    }
-    if (gradientPos3 >= 110 && direction2 === true) {
-      setDirection2(false);
-    }
-    setGradientPos1(direction ? gradientPos1 + 0.1 : gradientPos1 - 0.1);
-    setGradientPos2(direction2 ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
-    setGradientPos3(direction2 ? gradientPos3 + 0.3 : gradientPos3 - 0.3);
-    setGradientRadius(direction ? gradientRadius + 0.2 : gradientRadius - 0.2);
-  }, 150);
+  // useInterval(() => {
+  //   if (gradientRadius <= 20 && direction === false) {
+  //     setDirection(true);
+  //   }
+  //   if (gradientRadius >= 70 && direction === true) {
+  //     setDirection(false);
+  //   }
+  //   if (gradientPos3 <= 20 && direction2 === false) {
+  //     setDirection2(true);
+  //   }
+  //   if (gradientPos3 >= 110 && direction2 === true) {
+  //     setDirection2(false);
+  //   }
+  //   setGradientPos1(direction ? gradientPos1 + 0.1 : gradientPos1 - 0.1);
+  //   setGradientPos2(direction2 ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
+  //   setGradientPos3(direction2 ? gradientPos3 + 0.3 : gradientPos3 - 0.3);
+  //   setGradientRadius(direction ? gradientRadius + 0.3 : gradientRadius - 0.2);
+  // }, 150);
 
   return (
     <Box
-      bg={`${animatedColorGradient1(
-        gradientPos1,
-        gradientPos2,
-        gradientPos3,
-        gradientRadius
-      )}`}
+      // bg={`${animatedColorGradient1(
+      //   gradientPos1,
+      //   gradientPos2,
+      //   gradientPos3,
+      //   gradientRadius
+      // )}`}
+      bg={withoutMoving}
     >
       <Box animation={`${animation} 20s Infinite`} minHeight="100vh">
         <Flex
