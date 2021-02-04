@@ -73,15 +73,32 @@ const IndexPage = () => {
 
   return (
     <Box
-      // bg={`${animatedColorGradient1(
-      //   gradientPos1,
-      //   gradientPos2,
-      //   gradientPos3,
-      //   gradientRadius
-      // )}`}
-      bg={withoutMoving}
+    // bg={`${animatedColorGradient1(
+    //   gradientPos1,
+    //   gradientPos2,
+    //   gradientPos3,
+    //   gradientRadius
+    // )}`}
     >
-      <Box animation={`${animation} 40s Infinite`} minHeight="100vh">
+      <Box
+        position="fixed"
+        left="0"
+        top="0"
+        right="0"
+        bottom="0"
+        bg={withoutMoving}
+      >
+        <Box
+          animation={`${animation} 40s Infinite`}
+          position="fixed"
+          left="0"
+          top="0"
+          right="0"
+          bottom="0"
+        />
+      </Box>
+
+      <Box zIndex="20" position="relative">
         <Flex
           p={spacing}
           flexDirection={["column", "column", "row"]}
