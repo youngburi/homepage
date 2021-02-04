@@ -6,11 +6,13 @@ export const Square = ({
   color,
   children,
   size,
+  borderRadius,
 }: {
   initialPosition: number[];
   color: string;
   children?: ReactNode;
   size?: string[];
+  borderRadius?: string | string[];
 }) => {
   const [position, setPosition] = useState(initialPosition);
   const [doRise, setDoRise] = useState(true);
@@ -39,6 +41,7 @@ export const Square = ({
         position[1] * 1.2
       }rem rgba(0,0,0,1)`}
       // border="5px solid white"
+      borderRadius={borderRadius}
     >
       {children}
     </Box>

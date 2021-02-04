@@ -124,13 +124,16 @@ const IndexPage = () => {
           >
             <Square
               initialPosition={[0, 0]}
-              color="midnightblue"
+              color="transparent"
               size={["30vh", "30vh", "clamp(1rem, 20vw, 12rem)"]}
+              borderRadius={["50%", "50%", "0%"]}
             >
               <Image
                 src="/images/avatar.jpg"
                 boxSize={"100%"}
                 objectFit="cover"
+                borderRadius={["50%", "50%", "0%"]}
+                filter="contrast(1.5) brightness(0.8)"
               />
             </Square>
           </Box>
