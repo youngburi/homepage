@@ -27,7 +27,6 @@ export const Square = ({
 
   return (
     <Box
-      onClick={doRise ? rise : lower}
       onMouseOver={doRise ? rise : lower}
       position="relative"
       left={`-${position[0]}rem`}
