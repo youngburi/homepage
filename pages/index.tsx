@@ -1,156 +1,53 @@
-import { Box, Flex, Heading, Image, keyframes } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
+import { Background } from "../components/background/Background";
 import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
-import { withoutMoving } from "../utils/styles";
 
 const IndexPage = () => {
   const spacing = ["4", "8"];
 
-  const animation = keyframes`
-    0% {
-      backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(0deg);
-      background-position:0% 0%
-    }
-    
-    10% {
-      backdrop-filter: blur(15px) saturate(10) brightness(1.1) hue-rotate(30deg);
-      background-position:87% 100%;
-    }
-
-    22.5% {
-      backdrop-filter: blur(15px) saturate(8) brightness(1.5) hue-rotate(170deg);
-      background-position:87% 100%
-    }
-
-    33% {
-      backdrop-filter: blur(15px) saturate(6) brightness(1) hue-rotate(50deg);
-      background-position:87% 100%
-    }
-    
-    50% {
-      backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(360deg);
-    }
-
-    66% {
-      backdrop-filter: blur(15px) saturate(10) brightness(1.2) hue-rotate(345deg);
-    }
-
-    90% {
-      backdrop-filter: blur(15px) saturate(8) brightness(0.9) hue-rotate(330deg);
-    }
-    
-    100% {
-      backdrop-filter: blur(15px) saturate(10.8) brightness(1) hue-rotate(360deg);
-    }
-    `;
-
-  // const [gradientPos1, setGradientPos1] = useState(20.0);
-  // const [gradientPos2, setGradientPos2] = useState(50.0);
-  // const [gradientPos3, setGradientPos3] = useState(110.0);
-  // const [gradientRadius, setGradientRadius] = useState(30.0);
-  // const [direction, setDirection] = useState(true);
-  // const [direction2, setDirection2] = useState(true);
-
-  // useInterval(() => {
-  //   if (gradientRadius <= 20 && direction === false) {
-  //     setDirection(true);
-  //   }
-  //   if (gradientRadius >= 70 && direction === true) {
-  //     setDirection(false);
-  //   }
-  //   if (gradientPos3 <= 20 && direction2 === false) {
-  //     setDirection2(true);
-  //   }
-  //   if (gradientPos3 >= 110 && direction2 === true) {
-  //     setDirection2(false);
-  //   }
-  //   setGradientPos1(direction ? gradientPos1 + 0.1 : gradientPos1 - 0.1);
-  //   setGradientPos2(direction2 ? gradientPos2 - 0.2 : gradientPos2 + 0.2);
-  //   setGradientPos3(direction2 ? gradientPos3 + 0.3 : gradientPos3 - 0.3);
-  //   setGradientRadius(direction ? gradientRadius + 0.3 : gradientRadius - 0.2);
-  // }, 150);
-
   return (
-    <Box
-    // bg={`${animatedColorGradient1(
-    //   gradientPos1,
-    //   gradientPos2,
-    //   gradientPos3,
-    //   gradientRadius
-    // )}`}
-    >
+    <Box>
+      <Background />
       <Box
-        position="fixed"
-        left="0"
-        top="0"
-        right="0"
-        bottom="0"
-        bg={withoutMoving}
+        position="relative"
+        p={["4", "4", "6"]}
+        minHeight="100vh"
+        display="grid"
+        gridTemplateRows="auto 1fr"
       >
-        {/* <Heading
-          color="rgba(200,130,240,0.5)"
-          // fontWeight="400"
-          as="h1"
-          fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 12rem)"]}
-          height={["10vh", "10vh", "clamp(1rem, 20vw, 12rem)"]}
-          // lineHeight="1"
-          textAlign={["center", "center", "left"]}
-          mb={["0.5rem", "0.5rem", "0"]}
-          p={spacing}
-        >
-          Buri
-        </Heading> */}
-        <Box
-          animation={`${animation} 40s Infinite`}
-          position="fixed"
-          left="0"
-          top="0"
-          right="0"
-          bottom="0"
-        />
-      </Box>
-
-      <Box zIndex="20" position="relative">
-        <Flex
-          p={spacing}
-          flexDirection={["column", "column", "row"]}
-          alignItems="center"
-          // justifyContent={["space-between"]}
-          width="100%"
-          height="100%"
-        >
+        <Flex alignItems="center">
+          <Square
+            initialPosition={[0, 0]}
+            color="transparent"
+            size={["4rem", "4rem", "clamp(1rem, 14vw, 11rem)"]}
+            borderRadius={["50%", "50%", "50%"]}
+          >
+            <Image
+              src="/images/avatar.jpg"
+              boxSize={"100%"}
+              objectFit="cover"
+              borderRadius={["50%", "50%", "50%"]}
+              filter="contrast(0.8) brightness(1.1) saturate(1.8)"
+              transition="300ms ease"
+            />
+          </Square>
           <Heading
+            ml={["3", "3", "6"]}
             color="white"
             as="h1"
-            fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 12rem)"]}
-            height={["10vh", "10vh", "clamp(1rem, 20vw, 12rem)"]}
-            // lineHeight="1"
-            textAlign={["center", "center", "left"]}
-            mb={["0.5rem", "0.5rem", "0"]}
+            fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 15rem)"]}
+            lineHeight={["3rem", "3rem", "clamp(1rem, 20vw, 12rem)"]}
+            mb={["-8px", "-8px", "clamp(-10px, -2vh, -20px)"]}
+            transition="300ms ease"
+            zIndex="5"
           >
             Buri
           </Heading>
-          <Box
-            my={["5vh", "5vh", "0"]}
-            mx={["0", "0", "clamp(0.5rem, 5vw, 3rem)"]}
-          >
-            <Square
-              initialPosition={[0, 0]}
-              color="transparent"
-              size={["30vh", "30vh", "clamp(1rem, 20vw, 12rem)"]}
-              borderRadius={["50%", "50%", "0%"]}
-            >
-              <Image
-                src="/images/avatar.jpg"
-                boxSize={"100%"}
-                objectFit="cover"
-                borderRadius={["50%", "50%", "0%"]}
-                filter="contrast(0.8) brightness(1.1) saturate(1.8)"
-              />
-            </Square>
-          </Box>
-          <SquareGrid size={["30vh", "30vh", "clamp(1rem, 20vw, 12rem)"]}>
+        </Flex>
+        <Box display="grid" placeItems="center" height="100%" width="100%">
+          <SquareGrid size={["30vh", "40vh", "50vh"]}>
             <Square initialPosition={[0, 0]} color="midnightblue" />
             <Square initialPosition={[0, 0]} color="green" />
             <Square initialPosition={[0, 0]} color="yellow" />
@@ -161,7 +58,7 @@ const IndexPage = () => {
             <Square initialPosition={[0, 0]} color="tomato" />
             <Square initialPosition={[0, 0]} color="blueviolet" />
           </SquareGrid>
-        </Flex>
+        </Box>
       </Box>
     </Box>
   );
