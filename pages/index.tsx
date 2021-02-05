@@ -45,7 +45,7 @@ const IndexPage = () => {
           </Heading>
         </Flex>
         <Box display="grid" placeItems="center" height="100%" width="100%">
-          <SquareGrid size={["30vh", "40vh", "50vh"]}>
+          <SquareGrid size={["31vh", "42vh", "48vh"]}>
             <Square initialPosition={[0, 0]} color="midnightblue" />
             <Square initialPosition={[0, 0]} color="green" />
             <Square initialPosition={[0, 0]} color="yellow" />

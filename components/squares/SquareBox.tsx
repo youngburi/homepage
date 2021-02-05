@@ -40,7 +40,7 @@ export const Square = ({
       // boxShadow={`${position[0] * 1.8}rem ${
       //   position[1] * 1.2
       // }rem rgba(0,0,0,1)`}
-      border="clamp(4px, 1vw, 8px) solid white"
+      border="clamp(5px, 1vw, 8px) solid white"
       borderRadius={borderRadius}
       _hover={{
         transform: "translate(-2rem,-2rem)",
