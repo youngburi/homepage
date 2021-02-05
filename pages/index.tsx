@@ -17,7 +17,6 @@ const IndexPage = () => {
       >
         <Flex alignItems="center">
           <Square
-            initialPosition={[0, 0]}
             color="transparent"
             size={["4rem", "4rem", "clamp(1rem, 14vw, 11rem)"]}
             borderRadius={["50%", "50%", "50%"]}
@@ -46,15 +45,15 @@ const IndexPage = () => {
         </Flex>
         <Box display="grid" placeItems="center" height="100%" width="100%">
           <SquareGrid size={["31vh", "42vh", "48vh"]}>
-            <Square initialPosition={[0, 0]} color="midnightblue" />
-            <Square initialPosition={[0, 0]} color="green" />
-            <Square initialPosition={[0, 0]} color="yellow" />
-            <Square initialPosition={[0, 0]} color="darkred" />
-            <Square initialPosition={[0, 0]} color="deeppink" />
-            <Square initialPosition={[0, 0]} color="blue" />
-            <Square initialPosition={[0, 0]} color="white" />
-            <Square initialPosition={[0, 0]} color="tomato" />
-            <Square initialPosition={[0, 0]} color="blueviolet" />
+            <Square color="midnightblue" />
+            <Square color="green" />
+            <Square color="yellow" />
+            <Square color="darkred" />
+            <Square color="deeppink" />
+            <Square color="blue" />
+            <Square color="white" />
+            <Square color="tomato" />
+            <Square color="blueviolet" />
           </SquareGrid>
         </Box>
       </Box>

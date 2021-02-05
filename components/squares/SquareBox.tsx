@@ -2,13 +2,13 @@ import { Box } from "@chakra-ui/react";
 import React, { ReactNode, useState } from "react";
 
 export const Square = ({
-  initialPosition,
+  initialPosition = [0, 0],
   color,
   children,
   size,
   borderRadius,
 }: {
-  initialPosition: number[];
+  initialPosition?: number[];
   color: string;
   children?: ReactNode;
   size?: string[];
@@ -37,15 +37,14 @@ export const Square = ({
       width={size || "100%"}
       bg={color}
       transition="300ms ease, box-shadow 2s ease, transform 2s ease"
-      // boxShadow={`${position[0] * 1.8}rem ${
-      //   position[1] * 1.2
-      // }rem rgba(0,0,0,1)`}
+      boxShadow="0 0 black"
       border="clamp(5px, 1vw, 8px) solid white"
       borderRadius={borderRadius}
       _hover={{
         transform: "translate(-2rem,-2rem)",
         boxShadow: "4rem 4rem black",
         transition: "300ms ease",
+        cursor: "url('/images/avatar-head-smaller.png') 22.5 31, auto",
       }}
     >
       {children}
