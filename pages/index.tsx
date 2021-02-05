@@ -5,8 +5,6 @@ import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
 
 const IndexPage = () => {
-  const spacing = ["4", "8"];
-
   return (
     <Box>
       <Background />
