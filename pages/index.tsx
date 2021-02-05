@@ -23,7 +23,7 @@ const IndexPage = () => {
             borderRadius={["50%", "50%", "50%"]}
           >
             <Image
-              src="/images/avatar.jpg"
+              src="/images/avatar.png"
               boxSize={"100%"}
               objectFit="cover"
               borderRadius={["50%", "50%", "50%"]}
