@@ -88,6 +88,19 @@ const IndexPage = () => {
         bottom="0"
         bg={withoutMoving}
       >
+        {/* <Heading
+          color="rgba(200,130,240,0.5)"
+          // fontWeight="400"
+          as="h1"
+          fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 12rem)"]}
+          height={["10vh", "10vh", "clamp(1rem, 20vw, 12rem)"]}
+          // lineHeight="1"
+          textAlign={["center", "center", "left"]}
+          mb={["0.5rem", "0.5rem", "0"]}
+          p={spacing}
+        >
+          Buri
+        </Heading> */}
         <Box
           animation={`${animation} 40s Infinite`}
           position="fixed"
@@ -133,7 +146,7 @@ const IndexPage = () => {
                 boxSize={"100%"}
                 objectFit="cover"
                 borderRadius={["50%", "50%", "0%"]}
-                filter="contrast(0.8) brightness(1.1) saturate(2)"
+                filter="contrast(0.8) brightness(1.1) saturate(1.8)"
               />
             </Square>
           </Box>
