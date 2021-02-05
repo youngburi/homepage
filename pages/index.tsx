@@ -133,7 +133,7 @@ const IndexPage = () => {
                 boxSize={"100%"}
                 objectFit="cover"
                 borderRadius={["50%", "50%", "0%"]}
-                filter="contrast(1.5) brightness(0.8)"
+                filter="contrast(0.8) brightness(1.1) saturate(2)"
               />
             </Square>
           </Box>
