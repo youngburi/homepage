@@ -62,12 +62,28 @@ const IndexPage = () => {
           fontFamily="singleDay"
           color="white"
           textAlign="center"
-          fontSize={["2rem", "3rem"]}
+          transform="300ms ease"
+          fontSize={["2rem", "2rem", "clamp(1.5rem, 4vw, 4rem)"]}
           // fontWeight={["bold"]}
         >
           {`Software devEloper by day,
           painter and mUsician also by daY
           `}
+        </Text>
+      </Box>
+      <Box
+        position="relative"
+        p={["4", "4", "6"]}
+        fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
+        textAlign="justify"
+      >
+        <Text color="white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          atque quam consectetur voluptatum fugit perferendis non commodi ea nam
+          totam nisi neque nostrum natus velit placeat blanditiis autem, harum
+          adipisci officia recusandae repudiandae exercitationem magni
+          aspernatur cupiditate. Placeat tempore iusto nemo ad hic officia
+          tenetur saepe animi ipsam, reprehenderit adipisci?
         </Text>
       </Box>
     </Box>
