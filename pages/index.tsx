@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Background } from "../components/background/Background";
 import { Square } from "../components/squares/SquareBox";
@@ -39,12 +39,14 @@ const IndexPage = () => {
             mb={["-8px", "-8px", "clamp(-10px, -2vh, -20px)"]}
             transition="300ms ease"
             zIndex="5"
+            fontFamily="singleDay"
+            fontWeight="normal"
           >
             Buri
           </Heading>
         </Flex>
-        <Box display="grid" placeItems="center" height="100%" width="100%">
-          <SquareGrid size={["31vh", "42vh", "48vh"]}>
+        <Box display="grid" placeItems="center">
+          <SquareGrid size={["31vh", "42vh", "44vh"]}>
             <Square color="midnightblue" />
             <Square color="green" />
             <Square color="yellow" />
@@ -56,6 +58,17 @@ const IndexPage = () => {
             <Square color="blueviolet" />
           </SquareGrid>
         </Box>
+        <Text
+          fontFamily="singleDay"
+          color="white"
+          textAlign="center"
+          fontSize={["2rem", "3rem"]}
+          // fontWeight={["bold"]}
+        >
+          {`Software devEloper by day,
+          painter and mUsician also by daY
+          `}
+        </Text>
       </Box>
     </Box>
   );

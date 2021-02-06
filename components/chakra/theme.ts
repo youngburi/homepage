@@ -27,6 +27,7 @@ const fonts = {
   japaneseSerif: "'Noto Serif JP'",
   heading: "'Heebo'",
   body: "'Heebo'",
+  singleDay: "'Single Day'",
 };
 
 export const theme = extendTheme({ colors, fonts, styles });

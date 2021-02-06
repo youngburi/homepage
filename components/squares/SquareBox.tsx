@@ -37,14 +37,13 @@ export const Square = ({
       width={size || "100%"}
       bg={color}
       transition="300ms ease, box-shadow 2s ease, transform 2s ease"
-      boxShadow="0 0 black"
-      border="clamp(5px, 1vw, 8px) solid white"
+      boxShadow="0 0 rgba(0,0,0, 0.8)"
+      // border="clamp(5px, 1vw, 8px) solid white"
       borderRadius={borderRadius}
       _hover={{
         transform: "translate(-2rem,-2rem)",
         boxShadow: "4rem 4rem black",
         transition: "300ms ease",
-        cursor: "url('/images/avatar-head-smaller.png') 22.5 31, auto",
       }}
     >
       {children}
