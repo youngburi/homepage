@@ -66,6 +66,7 @@ const IndexPage = () => {
           transform="300ms ease"
           fontSize={["2rem", "2rem", "clamp(1.5rem, 4vw, 4rem)"]}
           px={["4", "4", "4"]}
+          mb={["6"]}
           // fontWeight={["bold"]}
         >
           {`Software devEloper by day,

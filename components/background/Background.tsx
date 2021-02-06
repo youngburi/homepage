@@ -15,10 +15,10 @@ export const Background = () => {
       <Box
         animation={`${backgroundAnimation} 40s Infinite`}
         position="fixed"
-        left="0"
-        top="0"
-        right="0"
-        bottom="0"
+        left="0rem"
+        top="0rem"
+        right="0rem"
+        bottom="-3rem"
       />
     </Box>
   );
