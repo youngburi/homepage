@@ -3,6 +3,7 @@ import React from "react";
 import { Background } from "../components/background/Background";
 import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
+import { transitionToSolidBackground } from "../utils/styles";
 
 const IndexPage = () => {
   return (
@@ -64,6 +65,7 @@ const IndexPage = () => {
           textAlign="center"
           transform="300ms ease"
           fontSize={["2rem", "2rem", "clamp(1.5rem, 4vw, 4rem)"]}
+          px={["4", "4", "4"]}
           // fontWeight={["bold"]}
         >
           {`Software devEloper by day,
@@ -73,17 +75,36 @@ const IndexPage = () => {
       </Box>
       <Box
         position="relative"
-        p={["4", "4", "6"]}
+        p={["12", "12", "16"]}
         fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
+        fontWeight="300"
         textAlign="justify"
+        bg={transitionToSolidBackground}
       >
-        <Text color="white">
+        <Text color="black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           atque quam consectetur voluptatum fugit perferendis non commodi ea nam
           totam nisi neque nostrum natus velit placeat blanditiis autem, harum
           adipisci officia recusandae repudiandae exercitationem magni
           aspernatur cupiditate. Placeat tempore iusto nemo ad hic officia
           tenetur saepe animi ipsam, reprehenderit adipisci?
+        </Text>
+      </Box>
+      <Box
+        position="relative"
+        px={["12", "12", "16"]}
+        pb="4"
+        fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
+        fontWeight="700"
+        textAlign="justify"
+        bg="rgba(240, 240, 240, 0.99)"
+      >
+        <Text color="black">
+          Omnis, sint eligendi quia iusto reiciendis vel. Repellat non
+          voluptatem, ab ipsam error hic officia aspernatur unde totam doloribus
+          cumque impedit esse mollitia ducimus cupiditate, illum dignissimos
+          temporibus eligendi consectetur quos eum quibusdam quae quia amet.
+          Iste.
         </Text>
       </Box>
     </Box>
