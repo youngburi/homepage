@@ -12,7 +12,7 @@ export const backgroundAnimation = keyframes`
 }
 
 22.5% {
-  backdrop-filter: blur(15px) saturate(8) brightness(1.5) hue-rotate(170deg);
+  backdrop-filter: blur(15px) saturate(8) brightness(1.3) hue-rotate(170deg);
   background-position:87% 100%
 }
 
