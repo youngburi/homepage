@@ -3,7 +3,6 @@ import React from "react";
 import { Background } from "../components/background/Background";
 import { Square } from "../components/squares/SquareBox";
 import { SquareGrid } from "../components/squares/SquareGrid";
-import { transitionToSolidBackground } from "../utils/styles";
 
 const IndexPage = () => {
   return (
@@ -64,14 +63,12 @@ const IndexPage = () => {
           color="white"
           textAlign="center"
           transform="300ms ease"
-          fontSize={["2rem", "2rem", "clamp(1.5rem, 4vw, 4rem)"]}
+          fontSize={["2rem", "2rem", "clamp(1.5rem, 3.5vw, 4rem)"]}
           px={["4", "4", "4"]}
           mb={["6"]}
           // fontWeight={["bold"]}
         >
-          {`Software devEloper by day,
-          painter and mUsician also by daY
-          `}
+          Software devEloper by day, painter and mUsician also by daY
         </Text>
       </Box>
       <Box
@@ -80,7 +77,9 @@ const IndexPage = () => {
         fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
         fontWeight="300"
         textAlign="justify"
-        bg={transitionToSolidBackground}
+        bg={"no-repeat url(/images/bgtransition.svg)"}
+        bgSize="105%"
+        bgPosition="center bottom -10px"
       >
         <Text color="black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident

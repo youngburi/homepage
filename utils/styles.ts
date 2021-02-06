@@ -50,10 +50,3 @@ radial-gradient(circle at 100% 34.400000000000716%, transparent, transparent 55%
 radial-gradient(ellipse at -110% 34.400000000000716%, transparent, transparent 55%, rgba(255,255,255, 0.4) 65%, transparent 68%),
 radial-gradient(circle, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.6) 100%)
 `;
-
-export const transitionToSolidBackground = `
-radial-gradient(circle at 40% 55%, rgba(240, 240, 240, 0.4) 0%, transparent 21%),
-radial-gradient(ellipse at -10% 90%, rgba(240, 240, 240, 0.99), transparent 40%),
-radial-gradient(ellipse at 120% 100%, rgba(240, 240, 240, 0.99) 30%, transparent 50%),
-linear-gradient(1deg, rgba(240, 240, 240, 0.99), transparent 60%)
-`;
