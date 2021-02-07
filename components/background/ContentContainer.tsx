@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import { ColorGrid } from "../squares/ColorGrid";
 
 export const ContentContainer = () => {
   const [ref, inView] = useInView({
@@ -35,6 +36,7 @@ export const ContentContainer = () => {
           tenetur saepe animi ipsam, reprehenderit adipisci?
         </Text>
       </Box>
+      <ColorGrid />
       <Box
         pb="4"
         fontSize={["1.4rem", "1.5rem", "1.6rem"]}

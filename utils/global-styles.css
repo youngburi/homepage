@@ -7,10 +7,6 @@ html {
   overflow-y: overlay;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   /* background: linear-gradient(

@@ -16,7 +16,6 @@ export const SquareGrid = ({
       gridTemplateRows="1fr 1fr 1fr"
       width={size}
       height={size}
-      transition="300ms ease"
       _hover={{
         cursor: "url('/images/avatar-head-smaller.png') 22.5 31, auto",
       }}

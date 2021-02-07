@@ -36,14 +36,13 @@ export const Square = ({
       height={size || "100%"}
       width={size || "100%"}
       bg={color}
-      transition="300ms ease, box-shadow 3s ease, transform 3s ease"
+      transition="box-shadow 3s ease, transform 3s ease"
       boxShadow="0 0 rgba(0,0,0, 0.8)"
       // border="clamp(5px, 1vw, 8px) solid white"
       borderRadius={borderRadius}
       _hover={{
         transform: "translate(-2rem,-2rem)",
         boxShadow: "4rem 4rem black",
-        transition: "300ms ease",
       }}
     >
       {children}
