@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React, { ReactNode, useState } from "react";
 
-export const Square = ({
+export const SquareBox = ({
   initialPosition = [0, 0],
   color,
   children,
@@ -43,6 +43,7 @@ export const Square = ({
       _hover={{
         transform: "translate(-2rem,-2rem)",
         boxShadow: "4rem 4rem black",
+        transition: "box-shadow 300ms ease, transform 300ms ease",
       }}
     >
       {children}

@@ -1,20 +1,21 @@
-import { Box, Square } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
+import { SquareBox } from "./SquareBox";
 import { SquareGrid } from "./SquareGrid";
 
 export const ColorGrid = () => {
   return (
-    <Box display="grid" placeItems="center" position="relative">
+    <Box display="grid" placeItems="center" position="relative" my="8">
       <SquareGrid size={["31vh", "38vh", "40vh"]}>
-        <Square color="midnightblue" />
-        <Square color="green" />
-        <Square color="yellow" />
-        <Square color="darkred" />
-        <Square color="deeppink" />
-        <Square color="blue" />
-        <Square color="white" />
-        <Square color="tomato" />
-        <Square color="blueviolet" />
+        <SquareBox color="midnightblue" />
+        <SquareBox color="green" />
+        <SquareBox color="yellow" />
+        <SquareBox color="darkred" />
+        <SquareBox color="deeppink" />
+        <SquareBox color="blue" />
+        <SquareBox color="white" />
+        <SquareBox color="tomato" />
+        <SquareBox color="blueviolet" />
       </SquareGrid>
     </Box>
   );

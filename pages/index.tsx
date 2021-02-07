@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Background } from "../components/background/Background";
 import { ContentContainer } from "../components/background/ContentContainer";
-import { Square } from "../components/squares/SquareBox";
+import { SquareBox } from "../components/squares/SquareBox";
 
 const IndexPage = () => {
   return (
@@ -16,7 +16,7 @@ const IndexPage = () => {
         gridTemplateRows="auto 1fr"
       >
         <Flex alignItems="center">
-          <Square
+          <SquareBox
             color="transparent"
             size={["4rem", "4rem", "clamp(1rem, 14vw, 6rem)"]}
             borderRadius={["50%", "50%", "50%"]}
@@ -29,7 +29,7 @@ const IndexPage = () => {
               filter="contrast(0.8) brightness(1.1) saturate(1.8)"
               transition="300ms ease"
             />
-          </Square>
+          </SquareBox>
           <Heading
             ml={["3", "3", "6"]}
             color="white"
@@ -54,6 +54,7 @@ const IndexPage = () => {
             fontSize={["2rem", "2.5rem", "clamp(3rem, 6vw, 6rem)"]}
             px={["4", "4", "8"]}
             mb={["10", "8", "6"]}
+            textShadow="4px 6px 8px rgba(100, 100, 100, 0.3)"
             // fontWeight={["bold"]}
           >
             Software devEloper by day,{" "}
