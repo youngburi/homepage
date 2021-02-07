@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { ColorGrid } from "../squares/ColorGrid";
+import { ColorGrid } from "./squares/ColorGrid";
 
 export const ContentContainer = () => {
   const [ref, inView] = useInView({

@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Background } from "../components/background/Background";
-import { ContentContainer } from "../components/background/ContentContainer";
+import { ContentContainer } from "../components/ContentContainer";
 import { SquareBox } from "../components/squares/SquareBox";
 
 const IndexPage = () => {
