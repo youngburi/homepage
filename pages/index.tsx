@@ -3,7 +3,6 @@ import React from "react";
 import { Background } from "../components/background/Background";
 import { ContentContainer } from "../components/background/ContentContainer";
 import { Square } from "../components/squares/SquareBox";
-import { SquareGrid } from "../components/squares/SquareGrid";
 
 const IndexPage = () => {
   return (
@@ -46,31 +45,24 @@ const IndexPage = () => {
             Buri
           </Heading>
         </Flex>
-        <Box display="grid" placeItems="center">
-          <SquareGrid size={["31vh", "38vh", "40vh"]}>
-            <Square color="midnightblue" />
-            <Square color="green" />
-            <Square color="yellow" />
-            <Square color="darkred" />
-            <Square color="deeppink" />
-            <Square color="blue" />
-            <Square color="white" />
-            <Square color="tomato" />
-            <Square color="blueviolet" />
-          </SquareGrid>
+        <Box display="grid" placeItems="center" height="100%">
+          <Text
+            fontFamily="singleDay"
+            color="white"
+            textAlign="center"
+            transition="300ms ease"
+            fontSize={["2rem", "2.5rem", "clamp(3rem, 6vw, 6rem)"]}
+            px={["4", "4", "8"]}
+            mb={["10", "8", "6"]}
+            // fontWeight={["bold"]}
+          >
+            Software devEloper by day,{" "}
+            <Text as="span" display={["none", "inline"]}>
+              <br />
+            </Text>
+            painter and mUsician also by daY
+          </Text>
         </Box>
-        <Text
-          fontFamily="singleDay"
-          color="white"
-          textAlign="center"
-          transition="300ms ease"
-          fontSize={["2rem", "2rem", "clamp(1.5rem, 3.5vw, 4rem)"]}
-          px={["4", "4", "4"]}
-          mb={["10", "8", "6"]}
-          // fontWeight={["bold"]}
-        >
-          Software devEloper by day, painter and mUsician also by daY
-        </Text>
       </Box>
       <ContentContainer />
     </Box>
