@@ -78,18 +78,18 @@ const IndexPage = () => {
       </Box>
       <Box
         position="relative"
-        mx={inView ? ["0rem"] : ["1rem", "4rem"]}
-        px={inView ? ["2rem", "6rem"] : ["1rem", "2rem"]}
+        mx={inView ? ["0rem"] : ["1rem", "1rem", "4rem"]}
+        px={inView ? ["2rem", "2rem", "6rem"] : ["1rem", "1rem", "2rem"]}
         pt={inView ? "4rem" : "1rem"}
         mt={inView ? "0rem" : "3rem"}
         transition="300ms ease"
         bg="custom.lightbg"
         ref={ref}
-        borderTopRadius={inView ? "0" : "2rem"}
+        borderTopRadius={inView ? "0" : "0.5rem"}
       >
         <Box
           position="relative"
-          fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
+          fontSize={["1.4rem", "1.5rem", "1.6rem"]}
           fontWeight="300"
           textAlign="justify"
           transition="300ms ease"
@@ -105,7 +105,7 @@ const IndexPage = () => {
         </Box>
         <Box
           pb="4"
-          fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
+          fontSize={["1.4rem", "1.5rem", "1.6rem"]}
           fontWeight="700"
           textAlign="justify"
           pt={"2rem"}
