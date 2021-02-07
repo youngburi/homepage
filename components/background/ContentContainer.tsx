@@ -5,7 +5,7 @@ import { ColorGrid } from "../squares/ColorGrid";
 
 export const ContentContainer = () => {
   const [ref, inView] = useInView({
-    threshold: 0.6,
+    threshold: 0.3,
   });
   return (
     <Box

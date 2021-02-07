@@ -4,7 +4,7 @@ import { SquareGrid } from "./SquareGrid";
 
 export const ColorGrid = () => {
   return (
-    <Box display="grid" placeItems="center">
+    <Box display="grid" placeItems="center" position="relative">
       <SquareGrid size={["31vh", "38vh", "40vh"]}>
         <Square color="midnightblue" />
         <Square color="green" />
