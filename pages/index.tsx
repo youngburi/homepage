@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Background } from "../components/background/Background";
 import { Square } from "../components/squares/SquareBox";
@@ -8,10 +8,6 @@ import { SquareGrid } from "../components/squares/SquareGrid";
 const IndexPage = () => {
   const [ref, inView] = useInView({
     threshold: 0.2,
-  });
-
-  useEffect(() => {
-    console.log(inView), [inView];
   });
 
   return (
@@ -27,7 +23,7 @@ const IndexPage = () => {
         <Flex alignItems="center">
           <Square
             color="transparent"
-            size={["4rem", "4rem", "clamp(1rem, 14vw, 11rem)"]}
+            size={["4rem", "4rem", "clamp(1rem, 14vw, 6rem)"]}
             borderRadius={["50%", "50%", "50%"]}
           >
             <Image
@@ -43,8 +39,8 @@ const IndexPage = () => {
             ml={["3", "3", "6"]}
             color="white"
             as="h1"
-            fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 15rem)"]}
-            lineHeight={["3rem", "3rem", "clamp(1rem, 20vw, 12rem)"]}
+            fontSize={["5rem", "5rem", "clamp(1rem, 20vw, 6rem)"]}
+            lineHeight={["3rem", "3rem", "clamp(1rem, 20vw, 6rem)"]}
             mb={["-8px", "-8px", "clamp(-10px, -2vh, -20px)"]}
             transition="300ms ease"
             zIndex="5"
@@ -55,7 +51,7 @@ const IndexPage = () => {
           </Heading>
         </Flex>
         <Box display="grid" placeItems="center">
-          <SquareGrid size={["31vh", "42vh", "44vh"]}>
+          <SquareGrid size={["31vh", "38vh", "40vh"]}>
             <Square color="midnightblue" />
             <Square color="green" />
             <Square color="yellow" />
@@ -74,7 +70,7 @@ const IndexPage = () => {
           transition="300ms ease"
           fontSize={["2rem", "2rem", "clamp(1.5rem, 3.5vw, 4rem)"]}
           px={["4", "4", "4"]}
-          mb={["6"]}
+          mb={["10", "8", "6"]}
           // fontWeight={["bold"]}
         >
           Software devEloper by day, painter and mUsician also by daY
@@ -82,11 +78,11 @@ const IndexPage = () => {
       </Box>
       <Box
         position="relative"
-        mx={inView ? "0rem" : "3rem"}
-        px={inView ? "4rem" : "1rem"}
+        mx={inView ? ["0rem"] : ["1rem", "4rem"]}
+        px={inView ? ["2rem", "6rem"] : ["1rem", "2rem"]}
         pt={inView ? "4rem" : "1rem"}
         mt={inView ? "0rem" : "3rem"}
-        transition="400ms ease"
+        transition="300ms ease"
         bg="custom.lightbg"
         ref={ref}
         borderTopRadius={inView ? "0" : "2rem"}
@@ -96,7 +92,7 @@ const IndexPage = () => {
           fontSize={["1.8rem", "1.9rem", "clamp(2rem, 3vw, 2.5rem)"]}
           fontWeight="300"
           textAlign="justify"
-          transition="400ms ease"
+          transition="300ms ease"
         >
           <Text color="black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -113,7 +109,7 @@ const IndexPage = () => {
           fontWeight="700"
           textAlign="justify"
           pt={"2rem"}
-          transition="400ms ease"
+          transition="300ms ease"
         >
           <Text color="black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
