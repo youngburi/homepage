@@ -54,8 +54,8 @@ const IndexPage = () => {
             fontSize={["2rem", "2.5rem", "clamp(3rem, 6vw, 6rem)"]}
             px={["4", "4", "8"]}
             mb={["10", "8", "6"]}
-            textShadow="4px 6px 8px rgba(100, 100, 100, 0.3)"
-            // fontWeight={["bold"]}
+            // textShadow="4px 6px 10px rgba(255, 255, 255, 0.1)"
+            fontWeight={["bold"]}
           >
             Software devEloper by day,{" "}
             <Text as="span" display={["none", "inline"]}>

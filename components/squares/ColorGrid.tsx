@@ -13,7 +13,7 @@ export const ColorGrid = () => {
         <SquareBox color="darkred" />
         <SquareBox color="deeppink" />
         <SquareBox color="blue" />
-        <SquareBox color="white" />
+        <SquareBox color="pink" />
         <SquareBox color="tomato" />
         <SquareBox color="blueviolet" />
       </SquareGrid>

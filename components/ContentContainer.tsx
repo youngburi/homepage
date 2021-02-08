@@ -12,8 +12,8 @@ export const ContentContainer = () => {
       position="relative"
       mx={inView ? ["0rem"] : ["1rem", "1rem", "4rem"]}
       px={inView ? ["2rem", "2rem", "6rem"] : ["1rem", "1rem", "2rem"]}
-      pt={inView ? ["2rem", "2rem", "6rem"] : "1rem"}
-      mt={inView ? "1rem" : ["2rem", "2rem", "6rem"]}
+      pt={inView ? ["2rem", "2rem", "6rem"] : "1.5rem"}
+      mt={inView ? "1.5rem" : ["2rem", "2rem", "6rem"]}
       transitionDuration="300ms"
       transitionTimingFunction="ease"
       transitionProperty="borderTopRadius, margin-left, margin-top, margin-right, padding-left, padding-top, padding-right"
