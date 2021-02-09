@@ -137,7 +137,7 @@ const IndexPage = () => {
           </Text>
         </Box>
       </Box>
-      <Box p={["4", "4", "6"]} display="flex" justifyContent="flex-start">
+      <Box p={["4", "4", "6"]} display="flex" justifyContent="center">
         <Box
           bg="black"
           position="relative"
@@ -149,7 +149,7 @@ const IndexPage = () => {
           style={{ backdropFilter: "blur(5px) brightness(0.9)" }}
         >
           <Text fontSize="4rem" fontWeight="600" color="rgba(248,250,255, 0.8)">
-            Music
+            Coding
           </Text>
           <Text
             fontSize={["1.4rem", "1.5rem", "1.6rem"]}
