@@ -71,6 +71,11 @@ const IndexPage = () => {
               <br />
             </Text>
             painter and mUsician also by daY
+            {/* Software developer by day,{" "}
+            <Text as="span" display={["none", "inline"]}>
+              <br />
+            </Text>
+            painter and musician also by day */}
           </Text>
         </Box>
       </Box>
