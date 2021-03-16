@@ -36,23 +36,13 @@ const IndexPage = () => {
           fontSize={["2rem", "3rem", "4rem"]}
           transition="font-size 300ms ease"
           pb={["0.3rem", "0.3rem"]}
+          // fontWeight="600"
         >
           Music
         </Heading>
-        <Text textAlign="justify" fontFamily="shippori" fontWeight="500">
-          I have been producing music – on and off – for over 15 years. Lorem
-          ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi
-          cupiditate assumenda maiores odit inventore quos, corrupti non
-          repellat culpa perspiciatis at atque sequi ea molestiae sint! Unde
-          aspernatur quaerat aliquid itaque ab architecto nulla ea perspiciatis
-          qui sit cumque doloremque earum aliquam dolor, recusandae iusto omnis
-          necessitatibus, culpa dolorem enim. Iusto expedita odio ratione libero
-          fugit minus numquam cum deserunt dolore, architecto laudantium
-          provident repellendus mollitia officiis ipsa voluptates? A laboriosam
-          molestiae possimus fugiat eum eius eaque maxime accusamus voluptates
-          distinctio perferendis, blanditiis, explicabo cum doloremque nesciunt
-          officiis, totam quasi omnis saepe tempore tempora nam dicta. Quod,
-          dolores est.
+        <Text textAlign="justify">
+          I have been producing music – on and off – for over 15 years. More
+          info coming.
         </Text>
         <Heading
           as="h1"
@@ -60,19 +50,13 @@ const IndexPage = () => {
           transition="font-size 300ms ease"
           pt={["2rem", "2rem"]}
           pb={["0.3rem", "0.3rem"]}
+          // fontWeight="600"
         >
           Painting
         </Heading>
-        <Text textAlign="justify" fontWeight="300">
-          Apparently as many others, I have picked up the brush and started
-          painting with oil during the lockdown. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Enim excepturi perferendis nisi dolorem
-          voluptatem a quidem vero consequatur earum! Inventore excepturi,
-          explicabo, quas consequuntur in optio placeat cupiditate iusto
-          ratione, possimus earum quo adipisci veritatis sed deserunt corporis
-          itaque perspiciatis nostrum dolorem sunt autem illo laudantium
-          consequatur! A eligendi, odit architecto omnis obcaecati porro. Nam ab
-          atque ratione sapiente voluptates!
+        <Text textAlign="justify">
+          As many others, I have picked up the brush and started painting with
+          oil during the lockdown. More info coming.
         </Text>
       </Box>
     </Box>
