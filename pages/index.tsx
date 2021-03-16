@@ -35,11 +35,12 @@ const IndexPage = () => {
           as="h1"
           fontSize={["2rem", "3rem", "4rem"]}
           transition="font-size 300ms ease"
+          pb={["0.3rem", "0.3rem"]}
         >
           Music
         </Heading>
-        <Text textAlign="justify">
-          I have been making music – on and off – for over 15 years. Lorem
+        <Text textAlign="justify" fontFamily="shippori" fontWeight="500">
+          I have been producing music – on and off – for over 15 years. Lorem
           ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi
           cupiditate assumenda maiores odit inventore quos, corrupti non
           repellat culpa perspiciatis at atque sequi ea molestiae sint! Unde
@@ -58,10 +59,11 @@ const IndexPage = () => {
           fontSize={["2rem", "3rem", "4rem"]}
           transition="font-size 300ms ease"
           pt={["2rem", "2rem"]}
+          pb={["0.3rem", "0.3rem"]}
         >
           Painting
         </Heading>
-        <Text textAlign="justify">
+        <Text textAlign="justify" fontWeight="300">
           Apparently as many others, I have picked up the brush and started
           painting with oil during the lockdown. Lorem ipsum dolor sit, amet
           consectetur adipisicing elit. Enim excepturi perferendis nisi dolorem

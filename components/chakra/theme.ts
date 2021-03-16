@@ -28,6 +28,7 @@ const fonts = {
   heading: "'Heebo'",
   body: "'Heebo'",
   singleDay: "'Single Day'",
+  shippori: "'Shippori Mincho', serif",
 };
 
 export const theme = extendTheme({ colors, fonts, styles });
