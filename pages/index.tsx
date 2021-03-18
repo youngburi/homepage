@@ -1,6 +1,7 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import { CustomLink, H1, H2 } from "../components/dom-elemens/typography";
 import { backgroundAnimation, gradientBackground } from "../utils/styles";
 
 const IndexPage = () => {
@@ -37,32 +38,58 @@ const IndexPage = () => {
         </Box>
       </Box>
       <Box px={["2rem", "2rem"]} pb={["2rem", "2rem"]}>
-        <Heading
-          as="h1"
-          fontSize={["2rem", "3rem", "4rem"]}
-          transition="font-size 300ms ease"
-          pb={["0.3rem", "0.3rem"]}
-          // fontWeight="600"
+        <Text
+          // textAlign="justify"
+          fontStyle="italic"
         >
-          Music
-        </Heading>
+          Hi. Most people call me Buri, and this is a summary of the things i
+          do, as an fyi.
+        </Text>
+        {/* <Text
+          // float="right"
+          // as="span"
+          color="red"
+          fontWeight="300"
+        >
+          [this page is work in progress]
+        </Text> */}
+        <H1 pt={["2rem", "2rem"]}>Music</H1>
         <Text textAlign="justify">
           I have been producing music – on and off – for over 15 years. More
           info coming.
         </Text>
-        <Heading
-          as="h1"
-          fontSize={["2rem", "3rem", "4rem"]}
-          transition="font-size 300ms ease"
-          pt={["2rem", "2rem"]}
-          pb={["0.3rem", "0.3rem"]}
-          // fontWeight="600"
+        <H2>Current Outlets</H2>
+        <CustomLink
+          href="https://open.spotify.com/artist/2RMU7Lt7hloDPL3mNcLg0V?si=rmg6lUddRVSNoaB61mrDrw"
+          isExternal
         >
-          Painting
-        </Heading>
+          Spotify
+        </CustomLink>
+        <CustomLink href="https://soundcloud.com/burichakalaka" isExternal>
+          Soundcloud
+        </CustomLink>
+        <H2>Past Projects</H2>
+        <CustomLink href="https://soundcloud.com/gutsch" isExternal>
+          Soundcloud 2
+        </CustomLink>
+        <CustomLink href="https://soundcloud.com/mockinsense" isExternal>
+          Soundcloud 3
+        </CustomLink>
+        <CustomLink href="https://soundcloud.com/loveschool" isExternal>
+          Soundcloud 4
+        </CustomLink>
+        <CustomLink href="https://soundcloud.com/ibra" isExternal>
+          Soundcloud 5
+        </CustomLink>
+        <H1 pt={["2rem", "2rem"]}>Painting</H1>
         <Text textAlign="justify">
           As many others, I have picked up the brush and started painting with
           oil during the lockdown. More info coming.
+        </Text>
+        <H1 pt={["2rem", "2rem"]}>Software</H1>
+        <Text textAlign="justify">
+          Fullstack web developer by trade, with main interests laying in
+          frontend design and UX. More info coming.
         </Text>
       </Box>
     </Box>
