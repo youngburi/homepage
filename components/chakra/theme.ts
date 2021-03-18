@@ -29,6 +29,7 @@ const fonts = {
   body: "'Heebo'",
   singleDay: "'Single Day'",
   shippori: "'Shippori Mincho', serif",
+  courierPrime: "'Courier Prime'",
 };
 
 export const theme = extendTheme({ colors, fonts, styles });

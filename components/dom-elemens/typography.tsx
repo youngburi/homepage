@@ -50,13 +50,26 @@ export const CustomLink = ({
   ...linkProps
 }: CustomTextProps & LinkProps) => {
   return (
-    <Link display="block" isExternal {...linkProps}>
-      {children}
-      {isExternal && (
-        <Box as="span" pl="0.5rem">
-          <FontAwesomeIcon icon={faExternalLinkAlt} />
-        </Box>
-      )}
-    </Link>
+    <Box>
+      <Link
+        isExternal
+        {...linkProps}
+        textDecoration="underline"
+        _hover={{
+          color: "red",
+          // fontWeight: 500,
+          textDecoration: "underline",
+        }}
+        // fontFamily="courierPrime"
+        fontWeight="300"
+      >
+        {children}
+        {isExternal && (
+          <Box as="span" pl="0.5rem">
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
+          </Box>
+        )}
+      </Link>
+    </Box>
   );
 };

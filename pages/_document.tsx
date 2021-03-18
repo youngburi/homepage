@@ -21,7 +21,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;875&family=Noto+Sans+JP:wght@300;400;700;900&family=Noto+Serif+JP:wght@400;900&family=Raleway:wght@427;652&family=Single+Day&family=Shippori+Mincho:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;875&family=Noto+Sans+JP:wght@300;400;700;900&family=Noto+Serif+JP:wght@400;900&family=Raleway:wght@427;652&family=Single+Day&family=Shippori+Mincho:wght@400;500&family=Courier+Prime&display=swap"
             rel="stylesheet"
           />
         </Head>
