@@ -43,7 +43,7 @@ const IndexPage = () => {
           fontStyle="italic"
         >
           Hi. Most people call me Buri, and this is a summary of the things i
-          do, as an fyi.
+          do, FYI.
         </Text>
         {/* <Text
           // float="right"
