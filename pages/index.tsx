@@ -1,10 +1,16 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import Head from "next/head";
 import React from "react";
 import { backgroundAnimation, gradientBackground } from "../utils/styles";
 
 const IndexPage = () => {
   return (
     <Box>
+      <Head>
+        <title>buri.fyi</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <Box height="100vh" width="100vw" p={["2rem", "2rem"]}>
         <Box bg={gradientBackground} height="100%" width="100%">
           <Box
