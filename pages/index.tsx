@@ -40,7 +40,7 @@ const IndexPage = () => {
       </Box>
       <Box px={["2rem", "2rem"]} pb={["2rem", "2rem"]}>
         <Text
-          // textAlign="justify"
+          // textAlign="center"
           fontStyle="italic"
         >
           I'm Buri and this is a summary of the things I do, FYI.
@@ -100,9 +100,10 @@ const IndexPage = () => {
       </Box>
       <Box display="flex" justifyContent="center">
         <Box
+          // borderTopRadius="0.5rem"
           bgColor="black"
           width="clamp(12rem, 50%, 30rem)"
-          mt="0.5rem"
+          mt="1rem"
           height="5rem"
           mx="2rem"
         ></Box>
