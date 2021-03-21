@@ -3,7 +3,7 @@ import { mode } from "@chakra-ui/theme-tools";
 
 const colors = {
   custom: {
-    lightbg: "#ffffff",
+    lightbg: "#eee",
     yellow: "yellow",
   },
 };

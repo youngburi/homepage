@@ -1,7 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-import { CustomLink, H1, H2 } from "../components/dom-elemens/typography";
+import { MainSection } from "../components/dom-elemens/Section";
+import { CustomLink, H1, H2 } from "../components/dom-elemens/Typographyy";
 import { backgroundAnimation, gradientBackground } from "../utils/styles";
 
 const IndexPage = () => {
@@ -23,7 +24,7 @@ const IndexPage = () => {
             p={["1rem"]}
           >
             <Text
-              color="white"
+              color="#eee"
               transition="font-size 300ms ease"
               fontSize={["clamp(1rem, 3vw, 2rem)"]}
               textAlign="center"
@@ -42,8 +43,7 @@ const IndexPage = () => {
           // textAlign="justify"
           fontStyle="italic"
         >
-          Hi. Most people call me Buri, and this is a summary of the things i
-          do, FYI.
+          I'm Buri and this is a summary of the things I do, FYI.
         </Text>
         {/* <Text
           // float="right"
@@ -54,43 +54,58 @@ const IndexPage = () => {
           [this page is work in progress]
         </Text> */}
         <H1 pt={["2rem", "2rem"]}>Music</H1>
-        <Text textAlign="justify">
-          I have been producing music – on and off – for over 15 years. More
-          info coming.
-        </Text>
-        <H2>Current Outlets</H2>
-        <CustomLink
-          href="https://open.spotify.com/artist/2RMU7Lt7hloDPL3mNcLg0V?si=rmg6lUddRVSNoaB61mrDrw"
-          isExternal
-        >
-          Spotify
-        </CustomLink>
-        <CustomLink href="https://soundcloud.com/burichakalaka" isExternal>
-          Soundcloud
-        </CustomLink>
-        <H2>Past Projects</H2>
-        <CustomLink href="https://soundcloud.com/gutsch" isExternal>
-          Soundcloud 2
-        </CustomLink>
-        <CustomLink href="https://soundcloud.com/mockinsense" isExternal>
-          Soundcloud 3
-        </CustomLink>
-        <CustomLink href="https://soundcloud.com/loveschool" isExternal>
-          Soundcloud 4
-        </CustomLink>
-        <CustomLink href="https://soundcloud.com/ibra" isExternal>
-          Soundcloud 5
-        </CustomLink>
+        <MainSection>
+          <Text textAlign="justify">
+            I have been producing music – on and off – for over 15 years. More
+            info coming.
+          </Text>
+          <H2>Current Outlets</H2>
+          <CustomLink
+            href="https://open.spotify.com/artist/2RMU7Lt7hloDPL3mNcLg0V?si=rmg6lUddRVSNoaB61mrDrw"
+            isExternal
+          >
+            Spotify
+          </CustomLink>
+          <CustomLink href="https://soundcloud.com/burichakalaka" isExternal>
+            Soundcloud
+          </CustomLink>
+          <H2>Past Projects</H2>
+          <CustomLink href="https://soundcloud.com/gutsch" isExternal>
+            Soundcloud 2
+          </CustomLink>
+          <CustomLink href="https://soundcloud.com/mockinsense" isExternal>
+            Soundcloud 3
+          </CustomLink>
+          <CustomLink href="https://soundcloud.com/loveschool" isExternal>
+            Soundcloud 4
+          </CustomLink>
+          <CustomLink href="https://soundcloud.com/ibra" isExternal>
+            Soundcloud 5
+          </CustomLink>
+        </MainSection>
         <H1 pt={["2rem", "2rem"]}>Painting</H1>
-        <Text textAlign="justify">
-          As many others, I have picked up the brush and started painting with
-          oil during the lockdown. More info coming.
-        </Text>
+        <MainSection>
+          <Text textAlign="justify">
+            As many others, I have picked up the brush and started painting with
+            oil during the lockdown. More info coming.
+          </Text>
+        </MainSection>
         <H1 pt={["2rem", "2rem"]}>Software</H1>
-        <Text textAlign="justify">
-          Fullstack web developer by trade, with main interests laying in
-          frontend design and UX. More info coming.
-        </Text>
+        <MainSection>
+          <Text textAlign="justify">
+            Fullstack web developer by trade, with main interests in frontend
+            design and UX. More info coming.
+          </Text>
+        </MainSection>
+      </Box>
+      <Box display="flex" justifyContent="center">
+        <Box
+          bgColor="black"
+          width="clamp(12rem, 50%, 30rem)"
+          mt="0.5rem"
+          height="5rem"
+          mx="2rem"
+        ></Box>
       </Box>
     </Box>
   );
