@@ -6,6 +6,7 @@ import { CustomLink, H1, H2 } from "../components/dom-elemens/Typographyy";
 import { backgroundAnimation, gradientBackground } from "../utils/styles";
 
 const IndexPage = () => {
+  const radius = "0rem"; //"clamp(1rem, 3vw, 2rem)";
   return (
     <Box>
       <Head>
@@ -22,7 +23,40 @@ const IndexPage = () => {
             display="grid"
             placeItems="center"
             p={["1rem"]}
+            position="relative"
           >
+            <Box
+              height={radius}
+              width={radius}
+              bg={`radial-gradient(circle at right bottom, transparent 71%, #eee 71%)`}
+              position="absolute"
+              top="0"
+              left="0"
+            />
+            <Box
+              height={radius}
+              width={radius}
+              bg={`radial-gradient(circle at left bottom, transparent 71%, #eee 71%)`}
+              position="absolute"
+              top="0"
+              right="0"
+            />
+            <Box
+              height={radius}
+              width={radius}
+              bg={`radial-gradient(circle at right top, transparent 71%, #eee 71%)`}
+              position="absolute"
+              bottom="0"
+              left="0"
+            />
+            <Box
+              height={radius}
+              width={radius}
+              bg={`radial-gradient(circle at left top, transparent 71%, #eee 71%)`}
+              position="absolute"
+              bottom="0"
+              right="0"
+            />
             <Text
               color="#eee"
               transition="font-size 300ms ease"
@@ -100,11 +134,11 @@ const IndexPage = () => {
       </Box>
       <Box display="flex" justifyContent="center">
         <Box
-          // borderTopRadius="0.5rem"
+          borderTopRadius={radius}
           bgColor="black"
-          width="clamp(12rem, 50%, 30rem)"
-          mt="1rem"
-          height="5rem"
+          width="clamp(12rem, 35vw, 18rem)"
+          mt={["3rem", "5rem"]}
+          height="clamp(6rem, 10vw, 10rem)"
           mx="2rem"
         ></Box>
       </Box>

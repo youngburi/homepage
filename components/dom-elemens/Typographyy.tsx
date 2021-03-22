@@ -17,7 +17,7 @@ export const H1 = ({
       fontSize={["3rem", "4rem", "clamp(4rem, 10vw, 8rem)"]}
       transition="font-size 300ms ease"
       pb={["0.3rem", "0.3rem"]}
-      // fontWeight="600"
+      // fontWeight="875"
       {...headingProps}
     >
       {children}
